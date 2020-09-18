@@ -39,7 +39,7 @@ class CardContainer extends Component {
       )
     } else {
         return (
-          <div className="card-container">
+          <div className="card-container disabled">
             <Card content={content}/>
             <Frame status={content.status} hover={content.hover}/>
           </div>
