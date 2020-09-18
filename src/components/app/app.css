@@ -19,7 +19,7 @@ h1 {
     font-size: 36px;
     line-height: 43px;
     text-align: center;
-    text-shadow: 0x 1px 1px #000000;
+    text-shadow: 0 1px 1px #000000;
     margin-bottom: 25px;
 }
 
@@ -38,8 +38,4 @@ h1 {
 
 .yellow {
     color: #FFFF66;
-}
-
-.background-blue {
-    background-color: #1698D9;
 }

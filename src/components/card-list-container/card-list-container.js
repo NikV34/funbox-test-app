@@ -17,7 +17,8 @@ class CardListContainer extends Component {
             number: "0,5",
             unit: "кг"
           },
-          status: "defaultHover"
+          status: "default",
+          hover: false
         },
         {
           title: "Сказочное заморское яство",
@@ -29,7 +30,8 @@ class CardListContainer extends Component {
             number: "2",
             unit: "кг"
           },
-          status: "default"
+          status: "default",
+          hover: false
         },
         {
           title: "Сказочное заморское яство",
@@ -41,15 +43,45 @@ class CardListContainer extends Component {
             number: "5",
             unit: "кг"
           },
-          status: "disabled"
+          status: "disabled",
+          hover: false
         }
       ]
+  }
+
+  toggleSelection = (idx) => {
+    this.setState((state) => {
+      const card = {...state.cards[idx]};
+      card.status =  card.status !== 'selected' ? 'selected' : 'default';
+      const newArray = [
+        ...state.cards.slice(0, idx),
+        card,
+        ...state.cards.slice(idx + 1),
+      ]
+      return { cards: newArray }
+    })
+  }
+
+  toggleHover = (idx) => {
+    this.setState((state) => {
+      const card = {...state.cards[idx]};
+      card.hover =  !card.hover;
+      const newArray = [
+        ...state.cards.slice(0, idx),
+        card,
+        ...state.cards.slice(idx + 1),
+      ]
+      return { cards: newArray }
+    })
   }
 
   render() {
     return (
       <div className="card-list-container">
-        <CardList cards={this.state.cards}/>
+        <CardList cards={this.state.cards}
+                  onToggleSelection={this.toggleSelection}
+                  onToggleHover={this.toggleHover}
+        />
       </div>
     )
   }

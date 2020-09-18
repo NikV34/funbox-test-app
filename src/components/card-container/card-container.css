@@ -9,6 +9,8 @@
     font-style: normal;
     padding: 21px 16px 16px 51px;
     margin-bottom: 14px;
+    transition-property: background;
+    transition-duration: 0.5s;
 }
 
 .card-container:first-child {

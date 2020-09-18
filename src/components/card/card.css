@@ -42,6 +42,7 @@
     justify-content: center;
     text-align: center;
     padding-top: 12px;
+    background-color: #1698D9;
 }
 
 .card-value-number {
@@ -66,6 +67,18 @@
     background-color: #B3B3B3;
 }
 
-.selectedHover {
+.card-value.selected {
+    background-color: #D91667;
+}
+
+.card-value.selected-hover {
+    background-color: #E62E7A;
+}
+
+.card-title.selected-hover {
     color: #E62E7A;
+}
+
+.card-value.default-hover {
+    background-color: #2EA8E6;
 }
