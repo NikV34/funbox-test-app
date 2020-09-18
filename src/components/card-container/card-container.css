@@ -9,8 +9,8 @@
     font-style: normal;
     padding: 21px 16px 16px 51px;
     margin-bottom: 14px;
-    transition-property: background;
-    transition-duration: 0.5s;
+    background: no-repeat url("./img/background-cat.png") 0% 100%, no-repeat url("./img/card-background.svg") 0% 100%;
+
 }
 
 .card-container:first-child {
@@ -21,6 +21,3 @@
     margin-right: 0;
 }
 
-.card-container:hover {
-    background: url("img/frame-default-hover.svg"), no-repeat url("img/background-cat.png") 0 100%, url("img/card-background.svg");
-}
