@@ -1,0 +1,24 @@
+.card-container {
+    width: 320px;
+    height: 480px;
+    margin: 0 0;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: 12px;
+    font-style: normal;
+    padding: 21px 16px 16px 51px;
+    margin-bottom: 14px;
+}
+
+.card-container:first-child {
+    margin-left: 0;
+}
+
+.card-container:last-child {
+    margin-right: 0;
+}
+
+.card-container:hover {
+    background: url("img/frame-default-hover.svg"), no-repeat url("img/background-cat.png") 0 100%, url("img/card-background.svg");
+}

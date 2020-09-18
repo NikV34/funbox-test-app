@@ -1,0 +1,29 @@
+.buy-button {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+}
+
+#buy-btn {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+.buy-button.default a {
+    color: #1698D9;
+}
+
+div.buy-button.default:after {
+    content: ".";
+    color: #1698D9;
+}
+
+.buy-button.default-hover a {
+    color: #2EA8E6;
+}
+
+div.buy-button.default-hover:after {
+    content: ".";
+    color: #2EA8E6;
+}

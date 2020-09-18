@@ -1,14 +1,10 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-image: url("background-pattern.png");
+@font-face {
+  font-family: 'Exo 2.0';
+  src: local('Exo 2.0'), url(./fonts/Exo2.0-Thin.otf) format('otf');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+body {
+   margin: 0;
+   background-image: url("background-pattern.png");
+   font-family: 'Exo 2.0', serif;
+ }
