@@ -23,7 +23,7 @@
     }
 
     .card-wrapper {
-        margin-right: 0;
+        margin: 0 0 25px;
     }
 
     .card-wrapper:first-child {
@@ -39,8 +39,7 @@
     }
 
     .card-wrapper {
-        margin-right: 80px;
-        margin-bottom: 0;
+        margin: 0 80px 0 0;
     }
 
     .card-wrapper:last-child {
