@@ -16,6 +16,23 @@
     margin-bottom: 0;
 }
 
+@media (min-width: 768px) {
+    .card-list {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card-wrapper {
+        margin-right: 0;
+    }
+
+    .card-wrapper:first-child {
+        margin-right: 80px;
+    }
+}
+
+
 @media (min-width: 1200px) {
     .card-list {
         display: inline-flex;
