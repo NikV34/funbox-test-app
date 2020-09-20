@@ -42,4 +42,8 @@
         margin-right: 80px;
         margin-bottom: 0;
     }
+
+    .card-wrapper:last-child {
+        margin-bottom: 0;
+    }
 }
