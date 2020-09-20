@@ -1,5 +1,9 @@
 body {
-   margin: 0;
-   background-image: url("background-pattern.png");
-   font-family: 'Exo 2.0', serif;
- }
+    margin: 0;
+    font-family: 'Exo 2.0', serif;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 49.88%, rgba(0,0,0,0.5) 100%), url("background-pattern.png");
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 49.88%,rgba(0,0,0,0.5) 100%), url("background-pattern.png");
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 49.88%,rgba(0,0,0,0.5) 100%), url("background-pattern.png");
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 );
+    background-repeat: no-repeat;
+}
