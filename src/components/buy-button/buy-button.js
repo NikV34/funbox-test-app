@@ -8,14 +8,14 @@ const BuyButton = ({content, onToggleSelection, onToggleHover}) => {
       const divClass = content.hover ? "default-hover" : "default";
       return (
         <div className={`buy-button white ${divClass}`}>{"Чего сидишь? Порадуй котэ, "}
-          <a href="#"
+          <button type="button"
              className="buy-btn"
              id="buy-btn"
              onClick={onToggleSelection}
              onMouseEnter={onToggleHover}
              onMouseLeave={onToggleHover} >
             <b>купи</b>
-          </a>
+          </button>
         </div>
       )
     case 'selected':

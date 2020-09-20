@@ -20,6 +20,18 @@ const boldDigit = (str) => {
   return newWords
 }
 
+const renderDescriptionItems = (description, classname) => {
+  if (description) {
+    let descriptionArray = [];
+    for (let key in description) {
+      if (description.hasOwnProperty(key)) {
+        descriptionArray.push(<p className={classname}>{boldDigit(description[key])}</p>);
+      }
+    }
+    return descriptionArray;
+  }
+}
+
 const Card = ({content, noHover}) => {
 
   const isDisabled = content.status === 'disabled' ? 'disabled' : ""
@@ -34,7 +46,7 @@ const Card = ({content, noHover}) => {
       </p>
       <h2 className={`card-headline black ${isDisabled}`}>{content.headline}</h2>
       <p className={`card-sub-headline black ${isDisabled}`}>{content.subHeadline}</p>
-      <p className={`card-description grey ${isDisabled}`}>{boldDigit(content.description)}</p>
+      {renderDescriptionItems(content.description, `card-description grey ${isDisabled}`)}
       <div className={`card-value background-blue ${isDisabled} ${isSelected} ${isSelectedHover} ${isDefaultHover}`}>
         <p className="card-value-number white">{content.value.number}</p>
         <p className="card-value-unit white">{content.value.unit}</p>

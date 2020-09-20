@@ -8,9 +8,16 @@
 #buy-btn {
     text-decoration: underline;
     text-decoration-style: dashed;
+    border: none;
+    background-color: transparent;
+    padding: 0 0;
 }
 
-.buy-button.default a {
+#buy-btn:focus {
+    outline:0;
+}
+
+.buy-button.default #buy-btn {
     color: #1698D9;
 }
 
@@ -19,7 +26,7 @@ div.buy-button.default:after {
     color: #1698D9;
 }
 
-.buy-button.default-hover a {
+.buy-button.default-hover #buy-btn {
     color: #2EA8E6;
 }
 

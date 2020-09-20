@@ -11,7 +11,11 @@ class CardListContainer extends Component {
           title: "Сказочное заморское яство",
           headline: "Нямушка",
           subHeadline: "с фуа-гра",
-          description: "10 порций мышь в подарок",
+          description: {
+            portions: "10 порций",
+            present: "мышь в подарок",
+            bonus: ""
+          },
           additionalDescription: "Печень утки разварная с артишоками.",
           value: {
             number: "0,5",
@@ -24,20 +28,28 @@ class CardListContainer extends Component {
           title: "Сказочное заморское яство",
           headline: "Нямушка",
           subHeadline: "с рыбой",
-          description: "40 порций 2 мыши в подарок",
+          description: {
+            portions: "40 порций",
+            present: "2 мыши в подарок",
+            bonus: ""
+          },
           additionalDescription: "Головы щучьи с чесноком да свежайшая сёмгушка.",
           value: {
             number: "2",
             unit: "кг"
           },
-          status: "default",
+          status: "selected",
           hover: false
         },
         {
           title: "Сказочное заморское яство",
           headline: "Нямушка",
           subHeadline: "с курой",
-          description: "100 порций 5 мышей в подарок заказчик доволен",
+          description: {
+            portions: "100 порций",
+            present: "5 мышей в подарок",
+            bonus: "заказчик доволен"
+          },
           additionalDescription: "Филе из цыплят с трюфелями в бульоне.",
           value: {
             number: "5",
